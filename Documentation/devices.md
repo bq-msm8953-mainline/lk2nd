@@ -80,6 +80,7 @@
 
 ### lk2nd-msm8953
 
+- BQ Aquaris X / X Pro (bardock / bardockpro)
 - Fairphone 3
 - Huawei Maimang 5 / Nova (Plus) / G9 (Plus)
 - Lenovo P2 (kuntao)
