@@ -1,0 +1,30 @@
+// SPDX-License-Identifier: BSD-3-Clause
+
+/dts-v1/;
+
+#include <skeleton64.dtsi>
+#include <lk2nd.dtsi>
+
+/ {
+	qcom,msm-id = <QCOM_ID_MSM8953 0>;
+	qcom,board-id= <QCOM_BOARD_ID(QRD, 1, 0) 0>;
+};
+
+&lk2nd {
+	model = "BQ Aquaris X / X Pro";
+	compatible = "bq,bardock", "bq,bardockpro";
+
+	panel {
+		compatible = "bq,bardock-panel", "lk2nd,panel";
+
+		qcom,mdss_dsi_ft8716_1080p_video {
+			compatible = "mdss,ft8716-1080p";
+			touchscreen-compatible = "focaltech,ft8716";
+		};
+
+		qcom,mdss_dsi_otm1906b_1080p_cmd {
+			compatible = "mdss,otm1906b-1080p";
+			touchscreen-compatible = "ilitek,ili2120";
+		};
+	};
+};
